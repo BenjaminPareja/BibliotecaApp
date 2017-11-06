@@ -1,0 +1,14 @@
+﻿
+@model List<BibliotecaApp.Models.Libro>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Libros</h2>
+
+@foreach (var libro in Model)
+{
+    <p><strong>Nombre: </strong>@libro.Nombre </p>
+    <p><strong>Nombre: </strong>@libro.Autor </p>
+    <hr />
+}
